@@ -1,0 +1,54 @@
+# MongoDB Commands for Linux Mint
+
+## Starting MongoDB
+1. `mongod` 
+   - Starts the MongoDB server.
+
+## Connecting to MongoDB
+2. `mongosh` 
+   - Starts the MongoDB shell to interact with the database.
+
+## Basic Commands in MongoDB Shell
+3. `show dbs` 
+   - Displays a list of all databases on the MongoDB server.
+
+4. `use <database_name>` 
+   - Switches to the specified database. Creates it if it doesn't exist.
+
+5. `db.createCollection("<collection_name>")` 
+   - Creates a new collection in the current database.
+
+6. `db.<collection_name>.insertOne({<document>})` 
+   - Inserts a single document into the specified collection.
+
+7. `db.<collection_name>.find()` 
+   - Retrieves all documents from the specified collection.
+
+8. `db.<collection_name>.findOne()` 
+   - Retrieves a single document from the specified collection.
+
+9. `db.<collection_name>.updateOne({<filter>}, {$set: {<update>}})` 
+   - Updates a single document in the specified collection.
+
+10. `db.<collection_name>.deleteOne({<filter>})` 
+    - Deletes a single document from the specified collection.
+
+## Administrative Commands
+11. `db.stats()` 
+    - Returns statistics about the current database.
+
+12. `db.<collection_name>.stats()` 
+    - Returns statistics about a specific collection.
+
+13. `db.dropDatabase()` 
+    - Deletes the current database.
+
+14. `db.<collection_name>.drop()` 
+    - Deletes the specified collection.
+
+## Exiting the MongoDB Shell
+15. `exit` 
+    - Exits the MongoDB shell.
+
+## Additional Commands
+- Use `help` in the MongoDB shell for a list of available commands.
